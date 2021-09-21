@@ -10,7 +10,15 @@ public class Ejercicio2a : MonoBehaviour
     void Start()
     {
 
-     
+        while (n <= 10)
+        {
+
+
+            n++;
+            Debug.Log("n vale " + n);
+
+
+        }
 
     }
 
@@ -18,15 +26,7 @@ public class Ejercicio2a : MonoBehaviour
     void Update()
     {
 
-        while (n <= 10)
-        {
-            
-            Debug.Log("n vale " + n);
-            n++;
-
-
-        }
-
+       
 
     }
 }

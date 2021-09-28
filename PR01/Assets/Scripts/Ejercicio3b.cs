@@ -7,7 +7,7 @@ public class Ejercicio3b : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        Calcular(125.6f, 587f, "dividir");
         
 
     }
@@ -19,32 +19,30 @@ public class Ejercicio3b : MonoBehaviour
     }
 
 
-    float Sumar(float num1, float num2)
+    void Calcular(float num1, float num2, string operacion)
     {
-        float resultado = num1 + num2;
-
-        print(EsMayorQue5(resultado));
-
-        return resultado;
-
-    }
-
-    bool EsMayorQue5(float numero)
-    {
-
-        bool resultado;
-        if (numero > 5)
+        float resultado = 0f;
+        if(operacion == "dividir")
         {
-            resultado = true;
+            resultado = num1 / num2;
+        }
+        else if(operacion == "restar")
+        {
+            resultado = num1 - num2; 
+        }
+        else if(operacion == "sumar")
+        {
+            resultado = num1 + num2;
         }
         else
         {
-            resultado = false;
+            resultado = num1 * num2;
         }
-        return resultado;
+              
+       
+        print(resultado);
 
     }
-
 
 }
 
